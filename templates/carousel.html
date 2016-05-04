@@ -1,13 +1,10 @@
-<div class="col-xs-12">
-    <ul class="carousel">
-    	<li ng-repeat="data in dataset">
-	        <h2 ng-click="tigger($index)" ng-class="{ 'opened': $index == eventNumber }" ng-class="{'opened': preEvent}">Title {{data}} <i class="glyphicon glyphicon-menu-down pull-right"></i></h2>
-	        <div class="carouselContent">
-	        	<p>Lorem ispsum dolor site amit h ajdhf asdkhf kjashf djasfh asdkfjh asdkjfh aksjdf hashf afas</p>
-	        	<p>Lorem ispsum dolor site amit h ajdhf asdkhf kjashf djasfh asdkfjh asdkjfh aksjdf hashf afas</p>
-	        	<p>Lorem ispsum dolor site amit h ajdhf asdkhf kjashf djasfh asdkfjh asdkjfh aksjdf hashf afas</p>
-	        </div>
-        </li>
-        
-    </ul>
-</div>
+<ul class="col-xs-12 accordion">
+	<li ng-repeat="data in dataset">
+        <h2 ng-click="tigger($index)" ng-class="{'opened': $index == eventNumber }">Title {{data}} <i class="glyphicon glyphicon-menu-down pull-right"></i></h2>
+        <div class="carouselContent">
+        	<p>Lorem ispsum dolor site amit h ajdhf asdkhf kjashf djasfh asdkfjh asdkjfh aksjdf hashf afas</p>
+        	<p>Lorem ispsum dolor site amit h ajdhf asdkhf kjashf djasfh asdkfjh asdkjfh aksjdf hashf afas</p>
+        	<p>Lorem ispsum dolor site amit h ajdhf asdkhf kjashf djasfh asdkfjh asdkjfh aksjdf hashf afas</p>
+        </div>
+    </li>      
+</ul>

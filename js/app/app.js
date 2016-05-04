@@ -2,11 +2,11 @@ var app = angular.module('angularCarousel', ['ui.router']);
 
 app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
     
-    $urlRouterProvider.otherwise('/carousel');
+    $urlRouterProvider.otherwise('/accordion');
 
     $stateProvider
-      .state('carousel', {
-          url:'/carousel',
+      .state('accordion', {
+          url:'/accordion',
           templateUrl:'templates/carousel.html',
           controller:'carouselCTRL'
       });
