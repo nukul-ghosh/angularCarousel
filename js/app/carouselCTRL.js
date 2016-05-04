@@ -1,18 +1,13 @@
 app.controller('carouselCTRL', ['$scope', function($scope) {
 
-    var preEvent = null;
+    $scope.dataset = [1,2,3,4,5];
 
-    $scope.tigger = function(event) {
-      if(preEvent && (preEvent != event.currentTarget)){
-        preEvent.setAttribute("class","");
-      }
-      if (event.target.className == ""){
-        event.currentTarget.setAttribute("class","opened");
-        preEvent = event.currentTarget;
-      } else{
-        event.currentTarget.setAttribute("class","")
-      }
-
-    };
+    $scope.tigger = function(index) {
+        if (index == $scope.eventNumber){
+          $scope.eventNumber = -1;
+          return;
+        }
+        $scope.eventNumber = index;
+    }
 
 }]);
