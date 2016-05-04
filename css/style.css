@@ -1,0 +1,9 @@
+.carouselContent {
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+    max-height: 0em;
+}
+
+.opened ~ .carouselContent {
+    max-height: 25em;
+}
