@@ -15,4 +15,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
       		templateUrl:'templates/login.html',
       		controller:'loginCTRL'
       });
+      /*.state('test',{
+        url:'/'
+      })*/
 }]);
